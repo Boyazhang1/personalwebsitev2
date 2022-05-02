@@ -1,0 +1,13 @@
+.backNavContainer {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50px;
+  img {
+    height: 45px;
+    width: 45px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
