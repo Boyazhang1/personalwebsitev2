@@ -1,4 +1,4 @@
-import SpotifyTrack from '../components/spotifyTrack';
+import SpotifyTrack from '../components/SongTrack/SongTrack';
 import styles from './index.module.scss';
 
 export default function Home({ recentlyPlayedSong }) {
@@ -12,24 +12,18 @@ export default function Home({ recentlyPlayedSong }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    '	https://api.spotify.com/v1/me/player/recently-played',
-    {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${process.env.SPOTIFY_ACCESS_TOKEN}`,
-      },
-    }
-  );
+  const lastFMUrl = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${process.env.LAST_FM_USERNAME}&api_key=${process.env.LAST_FM_API_KEY}&format=json&limit=10`;
 
-  const spotifyData = await res.json();
+  const res = await fetch(lastFMUrl);
+
+  const lastFMData = await res.json();
+
+  console.log(lastFMData.recenttracks.track[0].artist['#text']);
 
   const recentlyPlayedSong = {
-    artists: spotifyData.items[0].track.artists.map((artist) => artist.name),
-    spotifyRedirectUrl: spotifyData.items[0].track.external_urls.spotify,
-    trackName: spotifyData.items[0].track.name,
-    // returns array of 3 images, last image has dimensions 64x64
-    albumImgUrl: spotifyData.items[0].track.album.images[2].url,
+    artistName: lastFMData.recenttracks.track[0].artist['#text'],
+    trackName: lastFMData.recenttracks.track[0].name,
+    albumImgUrl: lastFMData.recenttracks.track[0].image[3]['#text'],
   };
 
   return {
