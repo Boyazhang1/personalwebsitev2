@@ -6,7 +6,7 @@ const SpotifyTrack = ({ recentlyPlayedSong }) => {
     <>
       {Object.keys(recentlyPlayedSong).length > 0 && (
         <section className={styles.recentlyPlayedSongContainer}>
-          <p>My most recently played song: </p>
+          <p>My most recently played song on spotify: </p>
           <div className={styles.songTrackContainer}>
             <img src={recentlyPlayedSong.albumImgUrl} />
             <div>

@@ -1,0 +1,17 @@
+.redirectIconsNavContainer {
+  display: flex;
+  column-gap: 2rem;
+
+  a {
+    height: 32px;
+  }
+
+  img {
+    height: 32px;
+    width: 32px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
