@@ -11,7 +11,7 @@ export default function Home({ recentlyPlayedSong }) {
         <h1>Boya Zhang</h1>
         <p>Hi, nice to meet you and thanks for stopping by! </p>
         <p>
-          I'm a first year student at the University of Waterloo studying{' '}
+          I&apos;m a first year student at the University of Waterloo studying{' '}
           <Link
             href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
             passHref
