@@ -14,16 +14,14 @@
   display: flex;
   width: 300px;
   justify-content: flex-start;
-  column-gap: 0.75rem;
 
   img {
     width: 56px;
     height: 56px;
+    margin-right: 0.75rem;
   }
 
   p {
     color: grey;
   }
 }
-
-
