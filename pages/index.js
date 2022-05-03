@@ -22,8 +22,8 @@ export default function Home({ recentlyPlayedSong }) {
           </Link>
           . In my free time, I like to explore different hiking trails, read
           non-fiction, and sell limited sneakers. Check out some of my work{' '}
-          <Link href="/projects" style={{ color: '#55D8C1' }}>
-            here
+          <Link href="/projects">
+            <a style={{ color: '#55D8C1' }}>here</a>
           </Link>
           . Always happy to chat!
         </p>
