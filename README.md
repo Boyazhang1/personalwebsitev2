@@ -1,1 +1,2 @@
-My personal website built with Next.js.
+My updated personal website built with Next.js static generation. 
+
