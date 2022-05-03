@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import styles from './BackNav.module.scss';
 const BackNav = () => {
   return (
     <div className={styles.backNavContainer}>
-      <a href="/">
+      <Link href="/">
         <img src="back-svgrepo-com.svg" />
-      </a>
+      </Link>
     </div>
   );
 };
