@@ -7,7 +7,7 @@ const Projects = () => {
       <BackNav />
       <div className={styles.outerContainer}>
         <div className={styles.pageContainer}>
-          <p>Coming soon! </p>
+          <p className={styles.comingSoonText}>Coming soon! </p>
         </div>
       </div>
     </>

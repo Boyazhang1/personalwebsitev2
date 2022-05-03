@@ -35,6 +35,9 @@
       text-decoration: underline;
     }
   }
+  .comingSoonText {
+    text-align: start;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -51,5 +54,8 @@
       font-weight: 900;
       margin-bottom: 1rem;
     }
+  }
+  .comingSoonText {
+    text-align: center;
   }
 }

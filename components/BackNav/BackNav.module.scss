@@ -4,10 +4,20 @@
   margin-left: 50px;
   img {
     height: 45px;
-    width: 45px;
     opacity: 0.8;
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .backNavContainer {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    img {
+      height: 30px;
     }
   }
 }

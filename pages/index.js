@@ -12,14 +12,18 @@ export default function Home({ recentlyPlayedSong }) {
           I'm a first year student at the University of Waterloo studying{' '}
           <a
             rel="noreferrer"
-            target="blank"
+            target="_blank"
             href="https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering"
+            style={{ color: '#AB46D2' }}
           >
             Systems Design Engineering
           </a>
           . In my free time, I like to explore different hiking trails, read
           non-fiction, and sell limited sneakers. Check out some of my work{' '}
-          <a href="/projects">here</a>. Always happy to chat!
+          <a href="/projects" style={{ color: '#55D8C1' }}>
+            here
+          </a>
+          . Always happy to chat!
         </p>
         <SpotifyTrack recentlyPlayedSong={recentlyPlayedSong} />
         <RedirectIconsNav />
